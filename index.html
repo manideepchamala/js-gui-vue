@@ -59,6 +59,22 @@
         <h3 class="mt-2">{{result}}</h3>
       </article>
 
+
+      <article id="lengthfinder" class="col-md-4 ">
+        <h2>Vue is good.</h2>
+        <p>This is level 1.</p>
+        <p>finding length of a word.</p>
+
+        <fieldset class="mt-2">
+          <label for="name">Enter your name (2 to 20 characters):</label>
+          <input v-model="name" id="name" type="text" minlength="2" maxlength="20">
+        </fieldset>
+        <h3 class="mt-2">{{LENGTH:}}</h3>
+
+
+
+      
+
       <article id="subtracter" class="col-md-4 ">
         <h2>No build tools required!</h2>
         <p>Here's another component.</p>
@@ -140,6 +156,7 @@
   <script src="components/adder/adder.js"></script>
   <script src="components/subtracter/subtracter.js"></script>
   <script src="components/coder/coder.js"></script>
+  <script src="components/lengthfinder/length.js"></script>
 </body>
 
 </html>
